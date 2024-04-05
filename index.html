@@ -1,30 +1,851 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Minimaliste</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Missions</a>
-          <div class="dropdown-content">
-            <a href="mission1.html">Mission 1</a>
-            <a href="mission2.html">Mission 2</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Content goes here -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./assets/icons/BS_squared.png" sizes="32x32">
+        <title>Ismaël Ait Lhoussaine - Portfolio</title>
+        <meta name="google-site-verification" content="bQNBvyW3uhvUd-tlKFfyvfrz0wG10B-TDz9rWShBs4I" />
+        <meta name="description"
+            content="Je m'appelle Ismaël Ait Lhoussaine. Je suis en deuxième année de BTS SIO option SLAM">
+        <meta name="author" content="Ait Lhoussaine">
+        <meta name="copyright" content="Ismaël Ait Lhoussaine">
 
-</body>
+        <link rel="stylesheet" href="./style/global.css" />
+        <link rel="stylesheet" href="./style/navbar.css">
+        <link rel="stylesheet" href="./style/banner.css">
+        <link rel="stylesheet" href="./style/timeline.css">
+        <link rel="stylesheet" href="./style/skills.css">
+        <link rel="stylesheet" href="./style/works.css">
+        <link rel="stylesheet" href="./style/dropdown.css">
+        <link rel="stylesheet" href="./style/watch.css">
+        <link rel="stylesheet" href="./style/contact.css">
+        <link rel="stylesheet" href="./style/footer.css">
+        <link rel="stylesheet" href="./style/responsive.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <script defer src="./script/main.js"></script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header id="header">
+            <div class="logo">
+                <div class="socials">
+                   
+                    
+                </div>
+                <a href="#accueil" class="name">Ismaël Ait Lhoussaine</a>
+            </div>
+
+            <div id="hamburger" tabindex="0" role="button" aria-roledescription="mobile menu open/close button"
+                aria-label="open/close menu button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+                    <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
+                    <li class="formationsXP"><a href="#formationsXP" onclick="toggleMenu()">Expériences</a></li>
+                    <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Réalisations</a></li>
+                    <li class="skills"><a href="#skills" onclick="toggleMenu()">Compétences</a></li>
+                    <li class="contact"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section class="banner" id="accueil">
+            <div>
+                <h1>
+                    <span>Ismaël Ait Lhoussaine</span>
+                </h1>
+                <h2>BTS SIO option SLAM</h2>
+                <a href="#profil" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Profil -->
+        <section class="about" id="profil">
+            <div class="heading">
+                <h2>Profil</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3>A propos de moi</h3>
+                    <p>
+                        Je m'appelle Ismaël Ait Lhoussaine, j'ai 22 ans et je suis en deuxième année de BTS SIO Option SLAM.
+                    </p>
+                    <h3>Parcours</h3>
+                    <p>
+                        J'ai obtenu un Bac STI2D en 2019. À la suite, j'ai travaillé pendant 1 an dans divers petits boulots. Puis j'ai décidé de faire une Licence STAPS que j'ai fini par 
+                        arrêter au bout de deux ans, afin de me réorienter vers l'informatique. J'ai donc choisi le BTS SIO option SLAM, car c'est pour moi une 
+                        bonne opportunité pour reprendre les études dans un domaine technique sans me retrouver perdu en ce qui concerne les matières scientifiques.
+                    </p>
+                   
+                    <h3>Projet professionnel</h3>
+                    <p>
+                        Désirant atteindre un haut niveau de qualification, je souhaite poursuivre mon projet de
+                        formation jusqu’à l’obtention d’un diplôme de niveau Bac +5.
+                    </p>
+                    <p>
+                        A la rentrée prochaine j'espère intégrer un BUT3 Informatique en alternance, ou une L3 Miage, à Grenoble.
+                    </p>
+                  
+                    <div class="dropdown">
+                        <a href="./assets/docs/cv_ismael.pdf" id="syntheseE4" target="_blank">
+                            <span>
+                                <i class="fa fa-eye"></i>
+                                Consulter CV
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="timelineContainer" id="formationsXP">
+            <div class="heading white">
+                <h2 style="color: #ffffff;">Formations et Expériences</h2>
+            </div>
+            <div class="timeline">
+                <div></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">2023 - 2024</h3>
+                        <h3 class="card-subtitle">Stage : Laboratoire de recherche TIMC</h3>
+                        <p class="card-detail">
+                           - Modélisation théorique de l'architecture des fibres myocardiques dans le ventricule droit.
+                        </p>
+                        <p class="card-detail">
+                           - Représentation de l'architecture des fibres myocardiques dans le ventricule droit à partir de données expérimentales.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">2022 - 2024</h3>
+                        <h3 class="card-subtitle">BTS SIO Option SLAM</h3>
+                        <p class="card-detail">
+                            Lycée Polyvalent Aristide Berges, Seyssinet-Pariset
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">2020 - 2022</h3>
+                        <h3 class="card-subtitle">Licence STAPS</h3>
+                        <p class="card-detail">
+                            UFRAPS, Saint-Martin-d'Hères
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">2019-2020</h3>
+                        <h3 class="card-subtitle">Employé polyvalent, agent d'accueil</h3>
+                        <p class="card-detail">Castorama Saint-Martin-d'Hères</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">2019</h3>
+                        <h3 class="card-subtitle">Baccalauréat STI2D option SIN</h3>
+                        <p class="card-detail">
+                            Lycée Polyvalent Vaucanson, Grenoble <br>
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- Réalisations -->
+        <section class="work" id="xpPro">
+            <div class="heading white">
+
+                <h2>Présentation de l'entreprise</h2>
+
+                <br>
+                <br>
+
+
+                <div class="presentation-labo contentBx">
+                    <img src="assets/img/logo_timc_500px.png" alt="logo timc">
+
+                    <br>
+                    <br>
+                    <p>
+                        Situé dans le bassin grenoblois, le laboratoire TIMC-IMAG « Techniques de
+                         l’Ingénierie Médicale et de la Complexité – Informatique, Mathématiques,
+                          Applications, Grenoble » réunit scientifiques et cliniciens autour de 
+                          l’utilisation de l’informatique et des mathématiques appliquées pour la
+                           compréhension et le contrôle des processus normaux et pathologiques en biologie
+                            et santé.
+                    </p>
+
+                    <p>
+                        Son activité interdisciplinaire contribue tant à la connaissance de base dans ces 
+                        domaines qu’au développement de systèmes pour l’aide au diagnostic et à la thérapie.
+
+                    </p>
+
+                    <p>
+                        TIMC-IMAG compte environ 300 membres répartis sur 12 équipes de recherche, dont environ 
+                        160 personnels permanents : chercheurs, enseignants-chercheurs, ingénieurs, techniciens
+                         et personnels administratifs. Il accueille chaque année près de 70 doctorants et post-
+                         doctorants.
+
+                    </p>
+
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Présentation du contexte</h2>
+
+                <br>
+                
+
+
+                <div class="presentation-labo contentBx">
+                    <div class="images-contexte"> 
+
+                    <img src="assets/img/dupin_ventricule.png" alt="ventricule">       
+                    <img src="assets/img/fibres_myocarde.jpg" alt="fibres">
+
+                    </div>
+
+
+
+                    <br>
+                    <br>
+                  
+                    <p>
+                    J'ai effectué mes deux stages au sein du laboratoire TIMC, et le deuxième était dans la continuité du premier,
+                    tout en étant plus approfondi.
+                    </p>
+
+                    <p>
+                    Le sujet principal concernait l'étude de l'orientation des fibres myocardiques dans le ventricule droit du coeur.
+                    En effet, le Docteur Pierre-Simon Jouk avait établi l'hypothèse d'une organisation des fibres myocardiques du ventricule 
+                    comme étant des géodésiques courant sur des cyclides de dupin imbriqués. 
+
+                    </p>
+
+                    <p>
+                    Mon stage de premier année consistait donc à tout d'abord réaliser un modèle théorique suivant cette conjecture : 
+                    Modéliser des cyclides de dupin imbriqués, ainsi que leurs géodésiques. Et pour cela, j'ai été accompagné par 2 autres 
+                    étudiants stagiaires en cycle d'école d'ingénieur et de Licence Mathématiques-Informatique. 
+                    </p>
+
+                    <p>
+                    En deuxième année, j'ai poursuivi notre travail, cette fois-ci accompagné d'un camarade de classe de SLAM. Et le 
+                    but principal était de : Réaliser une représentation en trois dimensions du coeur d'un patient, à partir de données expérimentales.
+                    </p>
+
+                </div>
+
+
+                <br>
+                <br>
+
+                <h2>Réalisations</h2>
+                <div class="contentBx">
+                    <p>
+                        Au cours de ma préparation au BTS SIO option SLAM, j'ai réalisé plusieurs projets lors de stages
+                        en entreprise ou d'ateliers professionnels. Ces réalisations en contexte professionnel ou pédagogique
+                        m'ont permis d'acquérir les
+                        blocs de compétences du réferentiel du BTS SIO.
+                    </p>
+                    
+                </div>
+                <div class="dropdown-wrapper">
+                    <div class="dropdown">
+                        <a href="./assets/docs/bts/synthese_e4.pdf" id="syntheseE4"
+                            target="_blank">
+                            <span>
+                                <i class="fa fa-eye"></i>
+                                Tableau de synthèse épreuve E4
+                            </span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Stages</h3>
+                    <button class="acc-btn">Stage 1 Laboratoire TIMC</button>
+                    <div class="acc-content">
+                        <p>
+                           J'ai participé à la modélisation d'un modèle théorique en 3 dimensions représentant l'architecture
+                           des fibres myocardiques du ventricule droit du coeur. Pour réaliser ce travail j'ai appréhendé de nouveaux outils
+                           informatiques tels que Blender, les librairies de visualisation de données avec Python. J'ai également dû me familiariser
+                           avec de nombreux concepts mathématiques qui m'ont été soit rappelés, soit introduits lorsqu'il s'agissait de concepts n'ayant pas été acquis
+                           lors de mon cursus scolaire.  
+                        </p>
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Missions</h4>
+                                <ul>
+                                    <li>Découverte du contexte et du code existant.</li>
+                                    <li>Familiarisation avec les concepts mathématiques.</li>
+                                    <li>Transfert du travail sur Blender.</li>
+                                    <li>Présentation du travail à l'équipe du laboratoire.</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Résultats</h4>
+                                <ul>
+                                    <li><img src="assets/img/dupin_de_face.png" alt=""></li>
+                                    <li><img src="assets/img/dupin_sliced.png" alt=""></li>
+                                    <li><img src="assets/img/dupin_ventricule.png" alt=""></li>
+                                    <li><img src="assets/img/geodesiques_cyclide.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/cfr/analyse_concurrentielle.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Veille concurrentielle
+                                </a>
+                                <a href="assets/docs/cfr/maquette_formation.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Maquette et charte graphique
+                                </a>
+                                <a href="assets/docs/cfr/CFR_Worksheet.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Document de travail
+                                </a>
+                                <a href="assets/docs/cfr/DocTechnique.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Documentation technique
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                    <button class="acc-btn">Stage Eastechnology - Février 2022</button>
+                    <div class="acc-content">
+                        <p>
+                            Fondée en 2019 et basée à Thionville, la société Eastechnology développe <a
+                                href="https://speat.fr/" target="_blank">l'application SPEAT</a> qui permet d'établir
+                            des partenariats avec des restaurants. L'application utilise des modèles 3D de produits
+                            alimentaires. Dans un avenir proche, ces modèles 3D seront proposés à la vente via le site
+                            marchand de l'entreprise. Dans ce contexte, j'ai créé des fiches produits des modèles 3D et
+                            je les ai ajouté au futur site.
+                        </p>
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Missions</h4>
+                                <ul>
+                                    <li>Utilisation de l'outil collaboratif Trello</li>
+                                    <li>Réalisation d'exports d'images à partir de modèles 3D avec la visionneuse 3D
+                                        Windows</li>
+                                    <li>Réalisation d'exports des modèles 3D sous différents formats avec le logiciel en
+                                        ligne Vectary</li>
+                                    <li>Création de macros pour automatiser les exports de fichiers</li>
+                                    <li>Création de fiches produits WordPress</li>
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Compétences</h4>
+                                <ul>
+                                    <li>1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6</li>
+                                    <li>2.1 | 2.2 | 2.3</li>
+                                    <li>3.1 | 3.2 | 3.3</li>
+                                    <li>4.1 | 4.2 | 4.3</li>
+                                    <li>5.1 | 5.2 | 5.3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/eastechnology/Trello EASTECHNOLOGY.png" target="_blank">
+                                    <i class="fa fa-picture-o"></i>
+                                    Capture d'écran Trello
+                                </a>
+                                <a href="assets/docs/eastechnology/screen_visionneuse3D.png" target="_blank">
+                                    <i class="fa fa-picture-o"></i>
+                                    Capture d'écran visionneuse 3D
+                                </a>
+                                <a href="assets/docs/eastechnology/screen_vectary.png" target="_blank">
+                                    <i class="fa fa-picture-o"></i>
+                                    Capture d'écran Vectary
+                                </a>
+                                <a href="assets/docs/eastechnology/macro-eastechnology.png" target="_blank">
+                                    <i class="fa fa-picture-o"></i>
+                                    Capture d'écran création de macros
+                                </a>
+                                <a href="assets/docs/eastechnology/screencapture-eastechnology-wp.png" target="_blank">
+                                    <i class="fa fa-picture-o"></i>
+                                    Capture d'écran fiche produit WordPress
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>                   
+
+                </div>
+                <div class="contentBx">
+                    <h3>Ateliers Professionnels</h3>
+
+                    <button class="acc-btn">Evolution de parc informatique</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte suivant :</p>
+                                    <li>La société FORMATECH vous demande d'établir des devis relatifs à l'évolution de
+                                        leur parc informatique. </li>
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Compétences</h4>
+                                <ul>
+                                    <li>1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6</li>
+                                    <li>2.1 | 2.2 | 2.3</li>
+                                    <li>5.1 | 5.2 | 5.3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap0/Cas FORMATECH.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Sujet
+                                </a>
+                                <a href="assets/docs/ap0/AP0 Veille techno salle vidéo.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Veille technologique salle vidéo
+                                </a>
+                                <a href="assets/docs/ap0/AP0 devis salle vidéo.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Devis salle vidéo
+                                </a>
+                                <a href="assets/docs/ap0/AP0 Veille techno salle CRM.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Veille technologique salle CRM
+                                </a>
+                                <a href="assets/docs/ap0/AP0 devis salle CRM.pdf">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Devis salle CRM
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                    <button class="acc-btn">Gestion informatisée de prêt de matériel</button>
+                    <div class="acc-content">
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activité réalisée</h4>
+                                <ul>
+                                    <p>Ce projet s'inscrit dans le contexte suivant :</p>
+                                    <li>Votre centre de formation souhaite numériser les prêts du matériel informatique
+                                        aux étudiants. Un début de réflexion est déjà en cours, et vous devez reprendre
+                                        le projet. </li>
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Compétences</h4>
+                                <ul>
+                                    <li>1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6</li>
+                                    <li>2.1 | 2.2 | 2.3</li>
+                                    <li>3.1 | 3.2 | 3.3</li>
+                                    <li>4.1 | 4.2 | 4.3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap1/Sujet.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Sujet
+                                </a>
+                                <a href="assets/docs/ap1/Rendu.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Rendu
+                                </a>
+                                <a href="assets/docs/ap1/Devis.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Devis
+                                </a>
+                                <a href="assets/docs/ap1/form-pret.html" target="_blank">
+                                    <i class="far fa-file-code"></i>
+                                    Maquette formulaire
+                                </a>
+                                <a href="assets/docs/ap1/queries.zip">
+                                    <i class="far fa-file-archive"></i>
+                                    Requêtes SQL
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+
+                    <button class="acc-btn">Application web - M2L</button>
+                    <div class="acc-content">
+                        <p>
+                            La MAISON DES LIGUES DE LA LORRAINE (M2L), établissement du Conseil Régional de Lorraine,
+                            est responsable de la gestion du service des sports et en particulier des ligues sportives
+                            ainsi que d’autres structures hébergées. La M2L doit fournir les infrastructures
+                            matérielles, logistiques et des services à l’ensemble des ligues sportives installées.
+                            <br><br>
+                            M2L souhaiterait mettre en place un service en ligne de gestion de réservation de salles de
+                            réunion.
+                        </p>
+                        <p>
+                            <a href="https://github.com/BSevault/PPE_M2L_backend" target="_blank"
+                                onclick="window.open('https://github.com/BSevault/PPE_M2L_frontend');"
+                            >
+                                Liens GitHub du projet
+                            </a>
+                        </p>
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activités effectuées</h4>
+                                <ul>
+                                    <li>Réalisation du diagramme des cas d'utilisation (use case diagram) pour répondre
+                                        au besoin</li>
+                                    <li>Recensement des données dans un dictionnaire de données <br>
+                                        Elaboration d'un modéle conceptuel de données (MCD), entité-association</li>
+                                    <li>Création d'une base de données, sous MariaDB, suivant notre MCD <br>
+                                        Listing et création des procédures stockées nécessaire aux fonctionnalités de
+                                        notre application
+                                    </li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Back-end :</span>
+                                        déploiement d'une API Node.js, utilisant la librairie Express.js</li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Front-end :</span>
+                                        React.js / HTML / CSS / JavaScript <br>
+                                        Utilisation de librairie sous React.js</li>
+                                    <li>Git & GitHub pour le travail collaboratif</li>
+                                    <li>Travail en méthode Agile. Réalisation d'un diagramme de Gantt pour la
+                                        répartition de tâches et s'assurer de l'état d'avancement de l'application</li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Architecture réseau
+                                            :</span> environnement Linux pour l'API Node.js et Windows pour le build
+                                        React.js</li>
+                                    <li>Réalisation de la documentation technique</li>
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Compétences</h4>
+                                <ul>
+                                    <li>4.1 | 4.2 | 4.3</li>
+                                    <li>5.1 | 5.2 | 5.3</li>
+                                    <li>6.1 | 6.2 | 6.3 | 6.4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap3_4/Contexte_M2L_-_Cahier_des_charges_pour_PPE_3_et_4.pdf"
+                                    target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Contexte M2L
+                                </a>
+                                <a href="assets/docs/ap3_4/useCase_MLD_web.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Use case diagram - MLD
+                                </a>
+                                <a href="https://docs.google.com/spreadsheets/d/1DGbmP3K6qeotFquCSfGwY0_vdhQZw54ZGL8QZ79OWkA" target="_blank">
+                                    <i class="fa fa-table"></i>
+                                    Document de travail
+                                </a>
+                                <a href="assets/docs/ap3_4/doc_technique.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Documentation technique
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                    <button class="acc-btn">Application mobile - M2L</button>
+                    <div class="acc-content">
+                        <p>
+                            La MAISON DES LIGUES DE LA LORRAINE (M2L), établissement du Conseil Régional de Lorraine,
+                            est responsable de la gestion du service des sports et en particulier des ligues sportives
+                            ainsi que d’autres structures hébergées. La M2L doit fournir les infrastructures
+                            matérielles, logistiques et des services à l’ensemble des ligues sportives installées.
+                            <br><br>
+                            M2L souhaiterait mettre en place une application mobile de commande de services, disponible
+                            au cours d’une réunion. Ainsi qu’un système permettant de valider la présence de chaque
+                            participant et ces-derniers pourront se signaler COVID positif, en cas de besoin.
+                        </p>
+                        <p>
+                            <a href="https://github.com/BSevault/PPE_M2L_backend" target="_blank"
+                                onclick="window.open('https://github.com/BSevault/PPE_M2L_mobile');"
+                            >
+                                Liens GitHub du projet
+                            </a>
+                        </p>
+                        <div class="missions-comp">
+                            <div class="missions">
+                                <h4>Activités effectuées</h4>
+                                <ul>
+                                    <li>Réalisation du diagramme des cas d'utilisation (use case diagram) pour répondre
+                                        au besoin</li>
+                                    <li>Utilisation de la même API Node.js que celle utilisée pour notre application web
+                                    </li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Back-end :</span>
+                                        API Node.js utilisant la librairie Express.js</li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Front-end :</span>
+                                        Flutter (langage de développement Dart) <br>
+                                        Utilisation de widgets et de librairie sous Flutter</li>
+                                    <li>Git & GitHub pour le travail collaboratif</li>
+                                    <li>Travail en méthode Agile</li>
+                                    <li><span style="text-decoration: underline; font-weight: 700;">Architecture réseau
+                                            :</span> environnement Linux pour l'API Node.js et Android pour le build APK
+                                        Flutter</li>
+                                    <li>Rédaction de la documentation technique</li>
+                                </ul>
+                            </div>
+                            <div class="comp">
+                                <h4>Compétences</h4>
+                                <ul>
+                                    <li>4.1 | 4.2 | 4.3</li>
+                                    <li>5.1 | 5.2 | 5.3</li>
+                                    <li>6.1 | 6.2 | 6.3 | 6.4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="dropdown">
+                            <span class="dropdown-btn"><i class="fa fa-download"></i>Documents</span>
+                            <div class="dropdown-content">
+                                <a href="assets/docs/ap3_4/Contexte_M2L_-_Cahier_des_charges_pour_PPE_3_et_4.pdf"
+                                    target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Contexte M2L
+                                </a>
+                                <a href="assets/docs/ap3_4/useCase_MLD_mob.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Use case diagram - MLD
+                                </a>
+                                <a href="https://docs.google.com/spreadsheets/d/1DGbmP3K6qeotFquCSfGwY0_vdhQZw54ZGL8QZ79OWkA" target="_blank">
+                                    <i class="fa fa-table"></i>
+                                    Document de travail
+                                </a>
+                                <a href="assets/docs/ap3_4/doc_technique.pdf" target="_blank">
+                                    <i class="far fa-file-pdf-o"></i>
+                                    Documentation technique
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section id="skills">
+            <div class="heading white">
+                <h2 style="color: #ffffff;">Compétences</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/html5.svg" alt="Logo HTML5" class="skill-logo">
+                    <h3 class="skill-name">HTML5</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/css.svg" alt="Logo CSS3" class="skill-logo">
+                    <h3 class="skill-name">CSS3</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/javascript.svg" alt="Logo JavaScript" class="skill-logo">
+                    <h3 class="skill-name">JavaScript</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/nodejs.svg" alt="Logo Node.js" class="skill-logo">
+                    <h3 class="skill-name">Node.js</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/expressjs-short-icon.svg" alt="Logo Express.js" class="skill-logo">
+                    <h3 class="skill-name">Express.js</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/postman.svg" alt="Logo Postman" class="skill-logo">
+                    <h3 class="skill-name">Postman</h3>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/reactjs.svg" alt="Logo React.js" class="skill-logo">
+                    <h3 class="skill-name">React.js</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/vuejs-icon.svg" alt="Logo Vue.js" class="skill-logo">
+                    <h3 class="skill-name">Vue.js</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/flutterio-icon.svg" alt="Logo Flutter" class="skill-logo">
+                    <h3 class="skill-name">Flutter</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/mariadb.svg" alt="Logo MariaDB" class="skill-logo">
+                    <h3 class="skill-name">MariaDB</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/mysql.svg" alt="Logo MySQL" class="skill-logo">
+                    <h3 class="skill-name">MySQL</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/DBeaver_logo.svg" alt="Logo DBeaver" class="skill-logo">
+                    <h3 class="skill-name">DBeaver</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/java.svg" alt="Logo Java" class="skill-logo">
+                    <h3 class="skill-name">Java</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/vscode.svg" alt="Logo VS Code" class="skill-logo">
+                    <h3 class="skill-name">VS Code</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/git.svg" alt="Logo Git" class="skill-logo">
+                    <h3 class="skill-name">Git</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/github.svg" alt="Logo GitHub" class="skill-logo">
+                    <h3 class="skill-name">GitHub</h3>
+                </div>
+                <div class="skill-badge">
+                    <img src="./assets/icons/skills/office.svg" alt="Logo MS Office" class="skill-logo">
+                    <h3 class="skill-name">MS Office</h3>
+                </div>
+            </div>
+            <h3 class="certif-header">Certifications / MOOC</h3>
+            <div class="skills-container certif">
+                <a href="./assets/docs/Microsoft_Certified_Professional_Certificate_0.pdf" target="_blank">
+                    <div class="skill-badge">
+                        <img src="./assets/icons/skills/microsoft_azure-icon.svg" alt="Logo MS Azure"
+                            class="skill-logo">
+                        <h3 class="skill-name">MS AZ-900</h3>
+                    </div>
+                </a>
+                <a href="./assets/docs/B. SEVAULT Attestation MOOC ANSSI.pdf" target="_blank">
+                    <div class="skill-badge">
+                        <img src="./assets/icons/skills/logo_ANSSI.png" alt="Logo ANSSI" class="skill-logo">
+                        <h3 class="skill-name">ANSSI</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <!-- Veille technologique -->
+        <section class="veille" id="veille">
+            <div class="heading">
+                <h2>Veille technologique</h2>
+                <div class="contentBx">
+                    <p>La veille technologique consiste à se tenir informé des évolutions techniques et des innovations
+                        dans un secteur d’activité donné. Cela comprend notamment la surveillance, la collecte, le
+                        partage et la diffusion d’information permettant d’anticiper ou d'avoir connaissance des
+                        changements en matière de recherche, développement, brevet, lancement de nouveaux produits,
+                        matériaux, processus, concepts, innovation de fabrication, etc….</p>
+                    <p>Aujourd’hui, la sécurité est un enjeu majeur pour
+                        les entreprises ainsi que pour l’ensemble des acteurs qui l’entourent. Aussi j'ai choisi d'axer ma veille sur le thème de la cybersécurité. </p>
+                    <p>Pour réaliser cette veille, j'utilise l'aggrégateur de flux RSS Feedly pour visualiser des
+                        articles autour de différents thèmes (cybersécurité, développement...), puis je sélectionne les
+                        articles pertinents, les trie, et les enregistre grâce à l'outil Pearltrees, visible ci-dessous
+                        : </p>
+                </div>
+            </div>
+            <div class="content">
+                <iframe src="https://www.pearltrees.com/benjamin_sevault?embed=2&d=2022010396"
+                    style="border:0px;"></iframe>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contactForm" id="contact">
+            <div class="heading white">
+                <h2>Contactez-moi</h2>
+                <p>Si vous êtes à la recherche d'un développeur front-end, back-end, logiciel ou base de données, je
+                    serai ravi d'en discuter avec vous.</p>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon adress"><i class="far fa-envelope"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>b.sevault@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon adress"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h3>Adresse</h3>
+                                <p>Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- https://formsubmit.co -->
+                <div class="formBx">
+                    <form action="https://formsubmit.co/7c03e17d26e54a053ac1d06c679c24b0" method="POST">
+                        <input type="hidden" name="_subject" value="Nouveau mail depuis le portfolio">
+                        <input type="hidden" name="_template" value="table">
+                        <label for="prenom">Votre prénom
+                            <input type="text" name="prenom" id="prenom" placeholder="* Champ requis" required>
+                        </label>
+                        <label for="nom">Votre nom
+                            <input type="text" name="nom" id="nom" placeholder="* Champ requis" required>
+                        </label>
+                        <label for="email">Votre adresse e-mail
+                            <input type="email" name="email" id="email" placeholder="* Champ requis" required>
+                        </label>
+                        <label for="message">Votre message
+                            <textarea name="message" id="message" placeholder="* Champ requis" required></textarea>
+                        </label>
+                        <input class="btn" type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p>Ismaël Ait Lhoussaine <img class="paws" src="./assets/icons/paws.png" alt="Icone de pattes de chat"></p>
+                <p>© 2022 All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+
 </html>
